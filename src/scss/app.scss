@@ -1,2 +1,10 @@
 @import './normalize.scss';
-@import './virables.scss';
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.active{
+    color: #FF6464;
+}
