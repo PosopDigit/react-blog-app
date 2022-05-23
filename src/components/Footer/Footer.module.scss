@@ -4,12 +4,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    img{
+    a{
         margin-right: 35px;
-        margin-bottom: 25px;
         &:last-child{
             margin-right: 0;
         }
+    }
+    img{
+        margin-bottom: 25px;
     }
     p{
         font-weight: 400;
