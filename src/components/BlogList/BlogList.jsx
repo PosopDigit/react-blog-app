@@ -10,28 +10,28 @@ const BlogList = () => {
         </div>
         <div className={styles.list}>
           <BlogItem
-            key={1}
+            id={1}
             title="UI Interactions of the week"
             date="12 feb 2020"
             type="Express, Handlebars"
             descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           />
           <BlogItem
-            key={2}
+            id={2}
             title="UI Interactions of the week"
             date="12 feb 2020"
             type="Express, Handlebars"
             descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           />
           <BlogItem
-            key={3}
+            id={3}
             title="UI Interactions of the week"
             date="12 feb 2020"
             type="Express, Handlebars"
             descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           />
           <BlogItem
-            key={4}
+            id={4}
             title="UI Interactions of the week"
             date="12 feb 2020"
             type="Express, Handlebars"
