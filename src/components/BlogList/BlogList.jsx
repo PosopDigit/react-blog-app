@@ -1,7 +1,17 @@
+import { useState, useEffect } from 'react';
+
 import BlogItem from '../BlogItem/BlogItem';
 import styles from './BlogList.module.scss';
 
 const BlogList = () => {
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(res => res.json())
+            .then(data => setPosts(data))
+    }, []);
+
   return (
     <div className={styles.BlogList}>
       <div className={styles.list_container}>
@@ -9,34 +19,15 @@ const BlogList = () => {
           <h2>Blog</h2>
         </div>
         <div className={styles.list}>
-          <BlogItem
-            id={1}
-            title="UI Interactions of the week"
-            date="12 feb 2020"
-            type="Express, Handlebars"
-            descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
-          <BlogItem
-            id={2}
-            title="UI Interactions of the week"
-            date="12 feb 2020"
-            type="Express, Handlebars"
-            descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
-          <BlogItem
-            id={3}
-            title="UI Interactions of the week"
-            date="12 feb 2020"
-            type="Express, Handlebars"
-            descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
-          <BlogItem
-            id={4}
-            title="UI Interactions of the week"
-            date="12 feb 2020"
-            type="Express, Handlebars"
-            descrip="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
+          {
+            posts.map(post => (
+              <BlogItem
+                id={post.id}
+                title={post.title}
+                descrip={post.body}
+              />
+            ))
+          }
         </div>
       </div>
     </div>

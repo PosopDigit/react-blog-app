@@ -6,12 +6,12 @@ const BlogItem = ({ title, date, type, descrip, id }) => {
     return (
         <div className={styles.BlogItem}>
             <div className={styles.item__title}>
-                <Link to={`/blog/${id}`}><h2>{title}</h2></Link>
+                <Link key={id} to={`/blog/${id}`}><h2>{title}</h2></Link>
             </div>
             <div className={styles.item__type}>
-                <p className={styles.type__date}>{date}</p>
+                <p className={styles.type__date}>12 Feb 2020</p>
                 <div className={styles.type__line}></div>
-                <p className={styles.type__type}>{type}</p>
+                <p className={styles.type__type}>Express, Handlebars</p>
             </div>
             <div className={styles.descrip}>
                 <p className={styles.descrip__text}>{descrip}</p>
