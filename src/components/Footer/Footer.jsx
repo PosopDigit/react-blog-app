@@ -9,10 +9,10 @@ const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.social}>
-                <img src={fb} alt="facebook" />
-                <img src={insta} alt="instagram" />
-                <img src={tw} alt="twitter" />
-                <img src={link} alt="linkedin" />
+                <a href="/"><img src={fb} alt="facebook" /></a>
+                <a href="/"><img src={insta} alt="instagram" /></a>
+                <a href="/"><img src={tw} alt="twitter" /></a>
+                <a href="/"><img src={link} alt="linkedin" /></a>
             </div>
             <p>Copyright ©2020 All rights reserved </p>
         </div>
