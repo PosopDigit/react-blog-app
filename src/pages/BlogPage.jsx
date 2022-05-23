@@ -1,5 +1,6 @@
 import BlogList from "../components/BlogList/BlogList";
 
+
 const BlogPage = () => {
     return (
         <div>
