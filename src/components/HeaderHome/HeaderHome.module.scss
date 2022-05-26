@@ -31,10 +31,16 @@
         }
         a{
             color: white;
-             text-decoration: none;
+            text-decoration: none;
             background: #FF6464;
             border-radius: 2px;
 
             padding: 10px 20px;
+            transition: 0.3s;
+            &:hover{
+                background:#f83030 ;
+
+            }
         }
+
 }

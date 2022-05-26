@@ -1,0 +1,57 @@
+.FeaturedWorksItem{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom:1px solid #E0E0E0 ;
+    
+}
+.Inner{
+    display: flex;
+    flex-direction: row;
+}
+.Right{
+    margin-left: 18px;
+}
+
+.Title{
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    
+    color: #21243D;
+}
+
+.DateNType{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Date{
+    padding: 5px 13px;
+    color: white;
+    background: #142850;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.Type{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    
+    color: #8695A4;
+}
+.Text{
+
+
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 600px;
+        color: #21243D;
+    }
+}
