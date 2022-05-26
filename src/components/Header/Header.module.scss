@@ -21,7 +21,19 @@
     }
 }
 
+.logo{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    
+    color: #21243D;
+}
+
 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     max-width: 1200px;
     margin: 0 auto;
 }
