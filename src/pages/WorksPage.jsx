@@ -1,7 +1,9 @@
+import WorksList from "../components/WorksList/WorksList";
+
 const WorksPage = () => {
     return (
         <div>
-            Works Page
+            <WorksList />
         </div>
     );
 }
