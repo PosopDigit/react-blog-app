@@ -6,6 +6,9 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.container}>
+                <div className={styles.logo}>
+                    <h1>John's Blog</h1>
+                </div>
                 <div className={styles.inner}>
                     <NavLink className={styles.inner__btn} to="/">Home</NavLink>
                     <NavLink className={styles.inner__btn} to="/works">Works</NavLink>
