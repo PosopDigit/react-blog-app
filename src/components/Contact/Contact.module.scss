@@ -1,0 +1,29 @@
+.Contact{
+    background: #EDF7FA;
+    margin-top: 50px;
+    padding: 50px 50px;
+}
+
+
+.Title{
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    padding: 50px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+
+
+        h3{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 38px;
+            
+            color: #21243D;
+        }
+}
+.Text{
+    margin-left: 50px;
+}
