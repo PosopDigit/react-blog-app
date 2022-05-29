@@ -1,11 +1,11 @@
-import styles from './FeaturedWorksItem.module.scss';
-
+import styles from './WorksItem.module.scss';
 import { Link } from 'react-router-dom';
 
-const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
+const WorksItem = ({ title, date, type, descrip, id }) => {
   const imgs = [{ img: 'https://picsum.photos/246/180?random=1' }];
+
   return (
-    <div className={styles.FeaturedWorksItem}>
+    <div className={styles.WorksItem}>
       <div className="container">
         <div className={styles.Inner}>
           <div className={styles.Left}>
@@ -18,7 +18,9 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
 
           <div className={styles.Right}>
             <div className={styles.Title}>
-              <Link key={id} to={`/works/${id}`}><h2>{title}</h2></Link>
+              <Link key={id} to={`/works/${id}`}>
+                <h2>{title}</h2>
+              </Link>
             </div>
 
             <div className={styles.DateNType}>
@@ -26,9 +28,7 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
               <p className={styles.Type}>Type</p>
             </div>
             <div className={styles.Text}>
-              <p>
-                {descrip}
-              </p>
+              <p>{descrip}</p>
             </div>
           </div>
         </div>
@@ -37,4 +37,4 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
   );
 };
 
-export default FeaturedWorksItem;
+export default WorksItem;

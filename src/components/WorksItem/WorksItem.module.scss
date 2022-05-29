@@ -1,19 +1,21 @@
-.FeaturedWorksItem{
+.WorksItem {
     margin-top: 15px;
     margin-bottom: 30px;
     padding: 20px 0;
-    border-bottom:1px solid #E0E0E0 ;
-    
+    border-bottom: 1px solid #E0E0E0;
+
 }
-.Inner{
+
+.Inner {
     display: flex;
     flex-direction: row;
 }
-.Right{
+
+.Right {
     margin-left: 18px;
 }
 
-.Title a{
+.Title a {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 30px;
@@ -22,13 +24,14 @@
     color: #21243D;
 }
 
-.DateNType{
+.DateNType {
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.Date{
+
+.Date {
     padding: 5px 13px;
     color: white;
     background: #142850;
@@ -37,17 +40,19 @@
     font-size: 18px;
     margin-right: 30px;
 }
-.Type{
+
+.Type {
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
-    
+
     color: #8695A4;
 }
-.Text{
+
+.Text {
 
 
-    p{
+    p {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;

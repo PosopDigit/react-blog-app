@@ -7,8 +7,12 @@ const WorkSinglePage = () => {
     const {id} = useParams()
     const [post, setPost] = useState(null);
 
-    const imgs = [
+    const img = [
         {img: "https://picsum.photos/850/580?random=1"},
+        
+    ]
+    const imgtwo = [
+        {img: "https://picsum.photos/750/480?random=2"},
         
     ]
 
@@ -30,7 +34,15 @@ const WorkSinglePage = () => {
                                 <p className={styles.type}>Dashboard, User Experience Design</p>
                             </div>
                             {
-                                imgs.map(img => (
+                                img.map(img => (
+                                    <>
+                                        <img src={img.img} alt="" />
+                                    </>
+                                ))
+                            }
+                            <p className={styles.descrip}>{post.body}</p>
+                            {
+                                imgtwo.map(img => (
                                     <>
                                         <img src={img.img} alt="" />
                                     </>
