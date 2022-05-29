@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import FeaturedWorksItem from '../FeaturedWorksItem/FeaturedWorksItem';
 import styles from './FeaturedWorks.module.scss';
 
@@ -18,7 +19,7 @@ const FeaturedWorks = () => {
       <div className="container">
         <div className={styles.Inner}>
           <div className={styles.Title}>
-            <h3 className={styles.titleN}>Featured works</h3>
+            <Link to='/works'><h3 className={styles.titleN}>Featured works</h3></Link>
           </div>
 
           <div className={styles.List}>
