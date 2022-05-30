@@ -16,3 +16,9 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1000px) {
+    .list_container {
+        padding: 0 15px;
+    }
+}
