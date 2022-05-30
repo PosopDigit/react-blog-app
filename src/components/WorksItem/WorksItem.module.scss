@@ -8,11 +8,14 @@
 
 .Inner {
     display: flex;
+    // flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
 }
 
 .Right {
     margin-left: 18px;
+    max-width: 700px;
 }
 
 .Title a {
@@ -58,5 +61,17 @@
         line-height: 24px;
         max-width: 600px;
         color: #21243D;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .Left{
+        margin-bottom: 30px;
+    }
+    .Inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

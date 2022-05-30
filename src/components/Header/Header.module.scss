@@ -37,3 +37,14 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+@media (max-width: 600px) {
+    .inner {
+        display: none;
+    }
+}
