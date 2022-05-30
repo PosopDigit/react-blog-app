@@ -2,7 +2,7 @@ import styles from './WorksItem.module.scss';
 import { Link } from 'react-router-dom';
 
 const WorksItem = ({ title, date, type, descrip, id }) => {
-  const imgs = [{ img: 'https://picsum.photos/246/180?random=1' }];
+  const imgs = [{ img: 'https://picsum.photos/300/200?random=1' }];
 
   return (
     <div className={styles.WorksItem}>

@@ -8,3 +8,9 @@
 .active{
     color: #FF6464;
 }
+
+@media (max-width: 1000px) {
+    .container{
+        padding: 0 15px;
+    }
+}
