@@ -22,6 +22,7 @@ const BlogList = () => {
           {
             posts.map(post => (
               <BlogItem
+                key={post.id}
                 id={post.id}
                 title={post.title}
                 descrip={post.body}
