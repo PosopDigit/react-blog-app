@@ -9,9 +9,9 @@ const BlogItem = ({ title, date, type, descrip, id }) => {
                 <Link key={id} to={`/blog/${id}`}><h2>{title}</h2></Link>
             </div>
             <div className={styles.item__type}>
-                <p className={styles.type__date}>12 Feb 2020</p>
+                <p className={styles.type__date}>{date}</p>
                 <div className={styles.type__line}></div>
-                <p className={styles.type__type}>Express, Handlebars</p>
+                <p className={styles.type__type}>{type}</p>
             </div>
             <div className={styles.descrip}>
                 <p className={styles.descrip__text}>{descrip}</p>
