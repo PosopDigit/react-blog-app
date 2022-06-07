@@ -10,9 +10,9 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
         <div className={styles.Inner}>
           <div className={styles.Left}>
             {imgs.map(img => (
-              <>
+              <div key={id}>
                 <img src={img.img} alt="" />
-              </>
+              </div>
             ))}
           </div>
 

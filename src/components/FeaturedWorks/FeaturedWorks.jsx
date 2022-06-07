@@ -24,7 +24,7 @@ const FeaturedWorks = () => {
 
           <div className={styles.List}>
             {features.map(post => (
-              <FeaturedWorksItem id={post.id} title={post.title} descrip={post.body} />
+              <FeaturedWorksItem key={post.id} id={post.id} title={post.title} descrip={post.body} />
             ))}
           </div>
         </div>

@@ -24,6 +24,7 @@ const RecentPosts = () => {
           {
             sortposts.map(post => (
               <LastBlogItem
+                key={post.id}
                 id={post.id}
                 title={post.title}
                 descrip={post.body}
