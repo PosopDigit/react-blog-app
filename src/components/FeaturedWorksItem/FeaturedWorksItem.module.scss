@@ -8,9 +8,12 @@
 .Inner{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .Right{
     margin-left: 18px;
+    max-width: 600px;
 }
 
 .Title a{
@@ -53,5 +56,25 @@
         line-height: 24px;
         max-width: 600px;
         color: #21243D;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Inner  {
+        display: flex;
+        flex-direction: column;
+    }
+    .Left {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .Right{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Inner {
+        align-items: center;
     }
 }

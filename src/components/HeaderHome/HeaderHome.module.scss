@@ -6,6 +6,7 @@
 .Inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
     align-items: center;
 }
 
@@ -43,4 +44,17 @@
             }
         }
 
+}
+
+
+@media (max-width: 768px) {
+    .Inner {
+        justify-content: center;
+    }
+    .Left {
+        margin-top: 35px;
+    }
+    .HeaderHome {
+        margin-top: 50px;
+    }
 }

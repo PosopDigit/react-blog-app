@@ -5,17 +5,17 @@ const Contact = () => {
         <div className={styles.Contact}>
             <div className='container'>
                 <div className={styles.Title}>
-                    <div className={styles.Name}> 
-                        <h3>Name: <br />
-                            Mail:  <br />
-                            Phone number:  
-                        </h3>
+                    <div className={styles.item}>
+                        <h3>Name:</h3>
+                        <p>John's Blog</p>
                     </div>
-                    <div className={styles.Text}>
-                        <h3>John's Blog <br />
-                            blogger_john@gmail.com <br />
-                            8-908-898-7002
-                        </h3>
+                    <div className={styles.item}>
+                        <h3>Mail:</h3>
+                        <p>blogger_john@gmail.com</p>
+                    </div>
+                    <div className={styles.item}>
+                        <h3>Phone Number:</h3>
+                        <p>8-908-898-70-02</p>
                     </div>
                 </div>
             </div>
