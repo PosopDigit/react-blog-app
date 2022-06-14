@@ -1,5 +1,5 @@
 .WorksList {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .inner {
@@ -17,5 +17,11 @@
         /* Dark Color */
 
         color: #21243D;
+    }
+}
+
+@media (max-width: 728px) {
+    .WorksList {
+        margin-top: 50px;
     }
 }

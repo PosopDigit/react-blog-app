@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import styles from '../scss/components/WorkSinglePage.module.scss'
+import { style } from "@mui/system";
 
 const WorkSinglePage = () => {
     const {id} = useParams()
@@ -36,7 +37,7 @@ const WorkSinglePage = () => {
                             {
                                 img.map(img => (
                                     <>
-                                        <img src={img.img} alt="" />
+                                        <img src={img.img} className={styles.img} alt="" />
                                     </>
                                 ))
                             }
@@ -44,7 +45,7 @@ const WorkSinglePage = () => {
                             {
                                 imgtwo.map(img => (
                                     <>
-                                        <img src={img.img} alt="" />
+                                        <img src={img.img}  className={styles.imgsec} alt="" />
                                     </>
                                 ))
                             }

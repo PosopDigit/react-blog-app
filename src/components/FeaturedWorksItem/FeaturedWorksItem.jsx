@@ -11,7 +11,7 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
           <div className={styles.Left}>
             {imgs.map(img => (
               <div key={id}>
-                <img src={img.img} alt="" />
+                <img src={img.img} className={styles.img} alt="" />
               </div>
             ))}
           </div>

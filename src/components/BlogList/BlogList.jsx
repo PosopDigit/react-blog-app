@@ -7,7 +7,7 @@ const BlogList = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-        fetch('http://localhost:3001/api/post')
+        fetch('https://jsonplaceholder.typicode.com/posts')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, []);

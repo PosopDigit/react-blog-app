@@ -46,3 +46,23 @@
     margin-top: 35px;
     margin-bottom: 35px;
 }
+.img{
+    max-width: 850px;
+    max-height: 580px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.imgsec {
+    max-width: 750px;
+    max-height: 580px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .WorkSinglePage{
+        margin-top: 50px;
+    }
+}

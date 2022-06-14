@@ -1,9 +1,12 @@
+.BlogList{
+    margin-top: 150px;
+}
+
 .list_container{
     max-width: 900px;
     margin: 0 auto;
 }
 .list__title{
-    margin-top: 100px;
     margin-bottom: 55px;
     h2{
         font-weight: 700;
@@ -20,5 +23,10 @@
 @media (max-width: 1000px) {
     .list_container {
         padding: 0 15px;
+    }
+}
+@media (max-width: 768px) {
+    .BlogList{
+        margin-top: 50px;
     }
 }
