@@ -15,7 +15,9 @@ const Header = () => {
                     <NavLink className={styles.inner__btn} to="/blog">Blog</NavLink>
                     <NavLink className={styles.inner__btn} to="/contact">Contact</NavLink>
                 </div>
+                
             </div>
+            
         </div>
     );
 }
