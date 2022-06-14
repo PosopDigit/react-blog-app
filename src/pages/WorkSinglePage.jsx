@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import styles from '../scss/components/WorkSinglePage.module.scss'
-import { style } from "@mui/system";
 
 const WorkSinglePage = () => {
     const {id} = useParams()
