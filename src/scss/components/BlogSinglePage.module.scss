@@ -41,3 +41,16 @@
     color: #000000;
     margin-top: 35px;
 }
+.img{
+    max-width: 850px;
+    max-height: 580px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px ) {
+    .BlogSinglePage{
+        margin-top: 50px;
+    }
+}

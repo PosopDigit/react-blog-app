@@ -36,7 +36,7 @@ const WorkSinglePage = () => {
                             {
                                 img.map(img => (
                                     <>
-                                        <img src={img.img} alt="" />
+                                        <img src={img.img} className={styles.img} alt="" />
                                     </>
                                 ))
                             }
@@ -44,7 +44,7 @@ const WorkSinglePage = () => {
                             {
                                 imgtwo.map(img => (
                                     <>
-                                        <img src={img.img} alt="" />
+                                        <img src={img.img}  className={styles.imgsec} alt="" />
                                     </>
                                 ))
                             }

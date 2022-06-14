@@ -32,7 +32,7 @@ const BlogSinglePage = () => {
                             {
                                 imgs.map(img => (
                                     <>
-                                        <img src={img.img} alt="" />
+                                        <img src={img.img} className={styles.img} alt="" />
                                     </>
                                 ))
                             }

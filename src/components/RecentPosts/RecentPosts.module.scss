@@ -27,4 +27,11 @@
 .sec__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 968px) {
+    .sec__list {
+        justify-content: center;
+    }
 }

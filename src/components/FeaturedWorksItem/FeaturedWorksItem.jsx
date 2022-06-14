@@ -3,7 +3,7 @@ import styles from './FeaturedWorksItem.module.scss';
 import { Link } from 'react-router-dom';
 
 const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
-  const imgs = [{ img: 'https://picsum.photos/246/180?random=1' }];
+  const imgs = [{ img: 'https://picsum.photos/300/200?random=1' }];
   return (
     <div className={styles.FeaturedWorksItem}>
       <div className="container">
@@ -11,7 +11,7 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
           <div className={styles.Left}>
             {imgs.map(img => (
               <div key={id}>
-                <img src={img.img} alt="" />
+                <img src={img.img} className={styles.img} alt="" />
               </div>
             ))}
           </div>
