@@ -8,7 +8,7 @@ const WorksList = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://629b5d64656cea05fc37f64b.mockapi.io/reactblogapi/works')
       .then(res => res.json())
       .then(data => setPosts(data));
   }, []);
@@ -22,7 +22,16 @@ const WorksList = () => {
           </div>
           <div className={styles.list}>
             {posts.map(post => (
-              <WorksItem key={post.id} id={post.id} title={post.title} descrip={post.body} />
+              <WorksItem
+                key={post.id}
+                id={post.id}
+                title={post.title}
+                descrip={post.body}
+                date={post.date}
+                type={post.type}
+                img={post.img}
+                imgsec={post.imgsec}
+              />
             ))}
           </div>
         </div>

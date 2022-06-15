@@ -8,7 +8,7 @@ const RecentPosts = () => {
   const sortposts = posts.slice(1,3)
 
   useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('https://629b5d64656cea05fc37f64b.mockapi.io/reactblogapi/posts')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, []);
@@ -28,6 +28,8 @@ const RecentPosts = () => {
                 id={post.id}
                 title={post.title}
                 descrip={post.body}
+                date={post.date}
+                type={post.type}
               />
             ))
           }

@@ -1,19 +1,14 @@
 import styles from './WorksItem.module.scss';
 import { Link } from 'react-router-dom';
 
-const WorksItem = ({ title, date, type, descrip, id }) => {
-  const imgs = [{ img: 'https://picsum.photos/300/200?random=1' }];
+const WorksItem = ({ title, date, type, descrip, id, img, imgsec }) => {
 
   return (
     <div className={styles.WorksItem}>
       <div className="container">
         <div className={styles.Inner}>
           <div className={styles.Left}>
-            {imgs.map(img => (
-              <div key={id}>
-                <img src={img.img} alt="" />
-              </div>
-            ))}
+           <img src={img} alt="" />
           </div>
 
           <div className={styles.Right}>
@@ -24,8 +19,8 @@ const WorksItem = ({ title, date, type, descrip, id }) => {
             </div>
 
             <div className={styles.DateNType}>
-              <p className={styles.Date}>2020</p>
-              <p className={styles.Type}>Type</p>
+              <p className={styles.Date}>{date}</p>
+              <p className={styles.Type}>{type}</p>
             </div>
             <div className={styles.Text}>
               <p>{descrip}</p>

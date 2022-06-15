@@ -7,13 +7,8 @@ const BlogSinglePage = () => {
     const {id} = useParams()
     const [post, setPost] = useState(null);
 
-    const imgs = [
-        {img: "https://picsum.photos/850/580?random=1"},
-        
-    ]
-
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        fetch(`https://629b5d64656cea05fc37f64b.mockapi.io/reactblogapi/posts/${id}`)
             .then(res => res.json())
             .then(data => setPost(data))
     }, [id]);
@@ -26,16 +21,10 @@ const BlogSinglePage = () => {
                         <div className={styles.inner}>
                             <h1>{post.title}</h1>
                             <div className={styles.dateType}>
-                                <p className={styles.date}>2020</p>
-                                <p className={styles.type}>Dashboard, User Experience Design</p>
+                                <p className={styles.date}>{post.date}</p>
+                                <p className={styles.type}>{post.type}</p>
                             </div>
-                            {
-                                imgs.map(img => (
-                                    <>
-                                        <img src={img.img} className={styles.img} alt="" />
-                                    </>
-                                ))
-                            }
+                            <img src={post.img} alt="" />
                             <p className={styles.descrip}>{post.body}</p>
                         </div>
                     </div>
