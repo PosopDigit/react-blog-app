@@ -7,17 +7,8 @@ const WorkSinglePage = () => {
     const {id} = useParams()
     const [post, setPost] = useState(null);
 
-    const img = [
-        {img: "https://picsum.photos/850/580?random=1"},
-        
-    ]
-    const imgtwo = [
-        {img: "https://picsum.photos/750/480?random=2"},
-        
-    ]
-
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        fetch(`https://629b5d64656cea05fc37f64b.mockapi.io/reactblogapi/works/${id}`)
             .then(res => res.json())
             .then(data => setPost(data))
     }, [id]);
@@ -30,25 +21,13 @@ const WorkSinglePage = () => {
                         <div className={styles.inner}>
                             <h1>{post.title}</h1>
                             <div className={styles.dateType}>
-                                <p className={styles.date}>2020</p>
-                                <p className={styles.type}>Dashboard, User Experience Design</p>
+                                <p className={styles.date}>{post.date}</p>
+                                <p className={styles.type}>{post.type}</p>
                             </div>
-                            {
-                                img.map(img => (
-                                    <>
-                                        <img src={img.img} className={styles.img} alt="" />
-                                    </>
-                                ))
-                            }
+                            <img src={post.img} alt=""  className={styles.img} />
                             <p className={styles.descrip}>{post.body}</p>
-                            {
-                                imgtwo.map(img => (
-                                    <>
-                                        <img src={img.img}  className={styles.imgsec} alt="" />
-                                    </>
-                                ))
-                            }
-                            <p className={styles.descrip}>{post.body}</p>
+                            <img src={post.imgsec} alt=""  className={styles.img} />
+                            <p className={styles.descrip}>{post.bodysec}</p>
                         </div>
                     </div>
                 </div>

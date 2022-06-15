@@ -8,9 +8,9 @@ const LastBlogItem = ({ title, date, type, descrip, id }) => {
                 <Link to={`/blog/${id}`}><h2>{title}</h2></Link>
             </div>
             <div className={styles.item__type}>
-                <p className={styles.type__date}>20 Feb 2020</p>
+                <p className={styles.type__date}>{date}</p>
                 <div className={styles.type__line}></div>
-                <p className={styles.type__type}>Design, Pattern</p>
+                <p className={styles.type__type}>{type}</p>
             </div>
             <div className={styles.descrip}>
                 <p className={styles.descrip__text}>{descrip}</p>

@@ -7,7 +7,7 @@ const BlogList = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('https://629b5d64656cea05fc37f64b.mockapi.io/reactblogapi/posts')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, []);
@@ -26,8 +26,9 @@ const BlogList = () => {
                 id={post.id}
                 title={post.title}
                 descrip={post.body}
-                date={post.dat}
-                type={post.typ}
+                date={post.date}
+                type={post.type}
+                img={post.img}
               />
             ))
           }

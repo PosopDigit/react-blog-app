@@ -22,8 +22,8 @@ const FeaturedWorksItem = ({ title, date, type, descrip, id }) => {
             </div>
 
             <div className={styles.DateNType}>
-              <p className={styles.Date}>2020</p>
-              <p className={styles.Type}>Type</p>
+              <p className={styles.Date}>{date}</p>
+              <p className={styles.Type}>{type}</p>
             </div>
             <div className={styles.Text}>
               <p>
